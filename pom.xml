@@ -6,7 +6,7 @@
 
     <groupId>avew.github.io</groupId>
     <artifactId>spring-query-spec-helper</artifactId>
-    <version>1.0.0</version>
+    <version>${app.version}</version>
     <packaging>jar</packaging>
     <description>Spring data query spec helper</description>
 
@@ -26,6 +26,7 @@
     </developers>
 
     <properties>
+        <app.version>1.0.1</app.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
@@ -33,6 +34,7 @@
         <spring.version>2.7.4</spring.version>
         <junit.version>4.13.1</junit.version>
         <hibernate-jpamodelgen.version>5.4.0.Final</hibernate-jpamodelgen.version>
+        <lombok.version>1.18.24</lombok.version>
     </properties>
 
     <dependencies>
@@ -61,6 +63,11 @@
             <groupId>com.google.code.findbugs</groupId>
             <artifactId>jsr305</artifactId>
             <version>${google.code.findbug.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
         </dependency>
         <dependency>
             <groupId>junit</groupId>
