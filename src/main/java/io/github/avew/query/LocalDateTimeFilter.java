@@ -31,11 +31,13 @@ public class LocalDateTimeFilter extends RangeFilter<LocalDateTime> {
         return this;
     }
 
+
     @Override
-    public LocalDateTimeFilter setGreaterOrEqualThan(LocalDateTime equals) {
-        super.setGreaterOrEqualThan(equals);
+    public LocalDateTimeFilter setGreaterThanOrEqual(LocalDateTime greaterThanOrEqual) {
+        super.setGreaterThanOrEqual(greaterThanOrEqual);
         return this;
     }
+
 
     @Override
     public LocalDateTimeFilter setLessThan(LocalDateTime equals) {
@@ -44,8 +46,8 @@ public class LocalDateTimeFilter extends RangeFilter<LocalDateTime> {
     }
 
     @Override
-    public LocalDateTimeFilter setLessOrEqualThan(LocalDateTime equals) {
-        super.setLessOrEqualThan(equals);
+    public LocalDateTimeFilter setLessThanOrEqual(LocalDateTime equals) {
+        super.setLessThanOrEqual(equals);
         return this;
     }
 
