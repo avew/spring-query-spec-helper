@@ -1,8 +1,8 @@
 package io.github.avew.criteria;
 
-import io.github.avew.query.InstantFilter;
-import io.github.avew.query.StringFilter;
 import lombok.*;
+import tech.jhipster.service.filter.InstantFilter;
+import tech.jhipster.service.filter.StringFilter;
 
 @Getter
 @Setter
